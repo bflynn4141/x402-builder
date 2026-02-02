@@ -1,0 +1,14 @@
+{
+  "name": "@x402-builder/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Solidity contracts for tokenizing x402 services with revenue sharing",
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "typecheck": "echo 'No typecheck for Solidity'",
+    "deploy:sepolia": "forge script script/Deploy.s.sol --rpc-url base_sepolia --broadcast --verify",
+    "deploy:mainnet": "forge script script/Deploy.s.sol --rpc-url base --broadcast --verify"
+  },
+  "devDependencies": {}
+}
